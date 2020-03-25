@@ -4,8 +4,8 @@ const itemSchema = require("./item");
 const partySchema = new mongoose.Schema({
 	name: { type: String, required: true },
 	author: { type: String, required: true },
-	date: Date,
-	items: [itemSchema],
+	date: { type: Date, required: true },
+	items: itemSchema,
 });
 
-module.exports = mongoose.model("Party", partySchema);
+module.exports = mongoose.model("parties", partySchema);
