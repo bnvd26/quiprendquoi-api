@@ -1,8 +1,9 @@
 # API Qui prend quoi - Documentation
 
-Cette API est actuellement hébergée à l'adresse `http://bastiencalou.fr:3000`
+## Avec Docker :
 
-Si vous avez un serveur accessible en `SSH`, vous pouvez l'y déployer et l'améliorer.
+`docker image build -t [name] .`
+`docker container run -p 8080:80 [name]`
 
 ## Créer un événement
 
@@ -123,4 +124,5 @@ Exemple de retour :
 ```
 Item removed
 ```
+
 # quiprendquoi-api
