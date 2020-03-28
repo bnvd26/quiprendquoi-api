@@ -18,4 +18,4 @@ app.use(function(req, res, next) {
 
 app.use("/party", partyRoutes);
 
-app.listen(80, () => console.log(`API app listening on port 80 !`));
+app.listen(3000, () => console.log(`API app listening on port 3000 !`));
