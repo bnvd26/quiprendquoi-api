@@ -5,7 +5,7 @@ const partySchema = new mongoose.Schema({
 	name: { type: String, required: true },
 	author: { type: String, required: true },
 	date: { type: Date, required: true },
-	items: itemSchema,
+	items: [itemSchema],
 });
 
 module.exports = mongoose.model("parties", partySchema);
